@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border: 2px solid black;
+         
+    }
+</style>
+<body>
+    <div class="wese">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Gender</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for i in all %}  
+              <tr>
+                <td>{{i.fname}}</td>
+                <td>{{i.lname}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.contact}}</td>
+                <td>{{i.gender}}</td>
+              </tr>
+              {% endfor %} 
+            </tbody>
+        </table>	
+    </div>
+</body>
+</html>
